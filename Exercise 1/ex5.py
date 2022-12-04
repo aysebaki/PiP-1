@@ -1,0 +1,18 @@
+a= int(input("Enter width"))
+b= float(input("Enter squat"))
+c= float(input("Enter bench press"))
+d= float(input("Enter deadlift"))
+
+width_title = a - len(" #Powerllifting 2022W")
+width_squat = a - len("Maximum Squat : ")
+width_benchpress = a - len("Maximum Bench Press : ")
+width_deadlift = a - len("Maximum Deadlift : ")
+
+print("#" * a)
+print(f"# Powerlifting 2022W {'#' :>{width_title}}")
+print("#" * a)
+print("Maximum Squat:" + f"{round(b, 1) :>{width_squat}}" + "kg" )
+print("Maximum Bench Press:" + f"{round(c, 1) :>{width_benchpress}}" + "kg")
+print("Maximum Deadlift:" + f"{round(d, 1) :>{width_deadlift}}" + "kg")
+print("-" * a)
+print("Total:" + f"{str(b+c+d) :>{a -8}}" + "kg")
